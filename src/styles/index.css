@@ -10,3 +10,21 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.big-box{
+    text-align: center;
+    background: black;
+}
+.big-box div{
+    display: inline-block;
+    box-sizing: content-box;
+    border-radius: 20%;
+    font-size: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 80px;
+    height: 80px;
+    background:#101010;
+    color: white;
+    padding: 10px;
+    margin: 3px;
+}

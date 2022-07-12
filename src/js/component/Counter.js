@@ -1,12 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import ReactDOM from "react-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faClock} from "@fortawesome/free-regular-svg-icons";
 
 export const Counter= (props) =>{
     return (
         <div className = "big-box">
         <div className ="counter">
-            <p>0</p>
+            <FontAwesomeIcon icon={faClock} />
         </div>
         <div className="one">{props.digitOne}</div>
         <div className="two">{props.digitTwo}</div>
@@ -50,7 +52,6 @@ export const Counter= (props) =>{
      const four =Math.floor((count/100)%10);
      const five = Math.floor((count/10)%10);
      const six = Math.floor((count/1)%10);
-     console.log(one,two, three, four,five, six)
      count++;
      
      ReactDOM.render(<Counter digitOne={one} digitTwo={two} digitThree={three} digitFour={four} digitFive={five} digitSix={six} />, document.querySelector("#app"));
